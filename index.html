@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="size-m">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
-    <title>Grupo 8</title>
+    <title>Ninja Coders</title>
   </head>
   <body class="body">
     <header>
-      <!-- <img /> -->
       <h1>Ninja Coders</h1>
       <nav>
         <ul>
@@ -18,13 +17,13 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <section>
         <img src="/img/fondo.jpg" />
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+        <h2>Tecleamos todo lo que imagines</h2>
       </section>
       <section>
-        <h2>EQUIPO</h2>
+        <h2 id="sec-team">EQUIPO</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipiscing elit justo nibh,
           posuere nascetur vel tempus imperdiet nisi etiam bibendum, ridiculus
@@ -54,79 +53,89 @@
         </div>
       </section>
       <section>
-        <h2>QUIÉNES SOMOS</h2>
-        <article>
-          <img src="" />
-          <h3>Alumna 1</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit justo nibh,
-            posuere nascetur vel tempus imperdiet nisi etiam bibendum, ridiculus
-            ante malesuada turpis hac porttitor aptent urna.
-          </p>
-          <ul>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-          </ul>
-        </article>
-        <article>
-          <img src="" />
-          <h3>Alumna 1</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit justo nibh,
-            posuere nascetur vel tempus imperdiet nisi etiam bibendum, ridiculus
-            ante malesuada turpis hac porttitor aptent urna.
-          </p>
-          <ul>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-          </ul>
-        </article>
-        <article>
-          <img src="" />
-          <h3>Alumna 1</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit justo nibh,
-            posuere nascetur vel tempus imperdiet nisi etiam bibendum, ridiculus
-            ante malesuada turpis hac porttitor aptent urna.
-          </p>
-          <ul>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-          </ul>
-        </article>
-        <article>
-          <img src="" />
-          <h3>Alumna 1</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit justo nibh,
-            posuere nascetur vel tempus imperdiet nisi etiam bibendum, ridiculus
-            ante malesuada turpis hac porttitor aptent urna.
-          </p>
-          <ul>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-          </ul>
-        </article>
+        <h2 id="sec-who-we-are">QUIÉNES SOMOS</h2>
+        <div class="who-we-are">
+          <article>
+            <img src="" />
+            <h3>Alumna 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit justo nibh,
+              posuere nascetur vel tempus imperdiet nisi etiam bibendum,
+              ridiculus ante malesuada turpis hac porttitor aptent urna.
+            </p>
+            <ul>
+              <li><img src="" alt="" /></li>
+              <li><img src="" alt="" /></li>
+              <li><img src="" alt="" /></li>
+              <li><img src="" alt="" /></li>
+            </ul>
+          </article>
+          <article>
+            <img src="" />
+            <h3>Alumna 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit justo nibh,
+              posuere nascetur vel tempus imperdiet nisi etiam bibendum,
+              ridiculus ante malesuada turpis hac porttitor aptent urna.
+            </p>
+            <ul>
+              <li><img src="" alt="" /></li>
+              <li><img src="" alt="" /></li>
+              <li><img src="" alt="" /></li>
+              <li><img src="" alt="" /></li>
+            </ul>
+          </article>
+          <article>
+            <img src="" />
+            <h3>Alumna 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit justo nibh,
+              posuere nascetur vel tempus imperdiet nisi etiam bibendum,
+              ridiculus ante malesuada turpis hac porttitor aptent urna.
+            </p>
+            <ul>
+              <li><img src="" alt="" /></li>
+              <li><img src="" alt="" /></li>
+              <li><img src="" alt="" /></li>
+              <li><img src="" alt="" /></li>
+            </ul>
+          </article>
+          <article>
+            <img src="" />
+            <h3>Alumna 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit justo nibh,
+              posuere nascetur vel tempus imperdiet nisi etiam bibendum,
+              ridiculus ante malesuada turpis hac porttitor aptent urna.
+            </p>
+            <ul>
+              <li><img src="" alt="" /></li>
+              <li><img src="" alt="" /></li>
+              <li><img src="" alt="" /></li>
+              <li><img src="" alt="" /></li>
+            </ul>
+          </article>
+        </div>
       </section>
     </main>
-    <footer>
-      <p>Copy</p>
-      <img src="" />
+    <footer class="footer">
+      <p class="copy">Ninja Coders &copy 2020</p>
       <nav>
-        <ul>
-          <li>EQUIPO</li>
-          <li>QUIÉNES SOMOS</li>
-          <li>CONTACTO</li>
+        <ul class="footer-list">
+          <li><a class="footer-link" href="#sec-team">EQUIPO</a></li>
+          <li>
+            <a class="footer-link" href="#sec-who-we-are">QUIÉNES SOMOS</a>
+          </li>
+          <li><a class="footer-link" href="#">CONTACTO</a></li>
         </ul>
       </nav>
+      <div class="div-icon-adalab">
+        <img
+          alt="logo Adalab"
+          class="icon-adalab"
+          src="./img/logo-adalab.png"
+        />
+      </div>
     </footer>
   </body>
 </html>
