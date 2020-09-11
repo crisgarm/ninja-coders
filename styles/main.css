@@ -2,33 +2,97 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
+@import url("https://db.onlinewebfonts.com/c/2547970600ac97f5d9bd0ebcc1f2dd9d?family=Font+Awesome+5+Brands");
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+
 /* GENERALES */
 
 * {
   box-sizing: border-box;
   margin: 0;
+  list-style: none;
 }
 .main {
-  margin: 15px;
+  margin: 15px 15px 0px 15px;
   text-align: center;
 }
 
 /* QUIÉNES SOMOS */
 
+.about-us {
+  height: 2225px;
+  /* background-color: red; */
+}
 .who-we-are {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
-@media all and (min-width: 768px) {
+.title-about-us {
+  display: inline-block;
+  margin: 30px 0px 0 0px;
+  color: #099d8d;
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  line-height: 45px;
+}
+.photo {
+  width: 180px;
+  height: 180px;
+  margin: 30px 0 0 0;
+  border-radius: 4px;
+  border: solid 5px rgba(0, 0, 0, 0.08);
+}
+
+.girls {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  margin: 15px 0 0 0;
+}
+
+.girls-text {
+  color: #54585a;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin: 15px 0 0 0;
+  width: 290px;
+  height: 200px;
+  line-height: 1.5;
+}
+
+.logotipe-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0 0 0;
+}
+.logotipe {
+  color: #099d8d;
+  width: 30px;
+  height: 30px;
+}
+.link-point:before {
+  border-color: solid;
+  padding: 4px;
+  content: "·";
+  color: #099d8d;
+  font-weight: bold;
+}
+
+/* @media all and (min-width: 768px) {
   .who-we-are {
     flex-direction: row;
   }
-}
+} */
 
 /* FOOTER  */
 
 .footer {
+  /* background-color: green; */
   border-top: 1px solid #b8b8b9;
   height: 250px;
   display: flex;
@@ -58,9 +122,57 @@
 }
 
 .div-icon-adalab {
-  width: 35%;
+  width: 115.9px;
+  height: 45px;
   margin: 30px 0 0 0px;
 }
 .icon-adalab {
   width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  .footer {
+    position: relative;
+    display: block;
+    height: 170px;
+  }
+  .copy {
+    position: absolute;
+    left: 45px;
+    bottom: 120px;
+  }
+  .div-icon-adalab {
+    position: absolute;
+    left: 45px;
+    bottom: 60px;
+  }
+  .footer-list {
+    position: absolute;
+    right: 45px;
+    bottom: 56px;
+    text-align: right;
+    height: 90px;
+    line-height: 30px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .footer {
+    height: 161px;
+  }
+  .copy {
+    /* position: absolute; */
+    left: 138px;
+    bottom: 111px;
+  }
+  .div-icon-adalab {
+    /* position: absolute; */
+    left: 138px;
+    bottom: 51px;
+  }
+  .footer-list {
+    /* position: absolute; */
+    right: 138px;
+    bottom: 47px;
+  }
 }
