@@ -32,7 +32,7 @@
 }
 .title-about-us {
   display: inline-block;
-  margin: 30px 0px 0 0px;
+  margin: 30px 0px 30px 0px;
   color: #099d8d;
   font-family: "Rubik", sans-serif;
   font-size: 24px;
@@ -41,7 +41,6 @@
 .photo {
   width: 180px;
   height: 180px;
-  margin: 30px 0 0 0;
   border-radius: 4px;
   border: solid 5px rgba(0, 0, 0, 0.08);
 }
@@ -59,21 +58,21 @@
   font-size: 16px;
   margin: 15px 0 0 0;
   width: 290px;
-  height: 200px;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .logotipe-list {
+  padding: 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  margin: 15px 0 0 0;
+  height: 30px;
+  margin: 15px 0px 45px 0px;
 }
 .logotipe {
   color: #099d8d;
-  width: 30px;
-  height: 30px;
+  width: 16px;
+  height: 16px;
 }
 .link-point:before {
   border-color: solid;
@@ -82,12 +81,6 @@
   color: #099d8d;
   font-weight: bold;
 }
-
-/* @media all and (min-width: 768px) {
-  .who-we-are {
-    flex-direction: row;
-  }
-} */
 
 /* FOOTER  */
 
@@ -129,6 +122,84 @@
 .icon-adalab {
   width: 100%;
 }
+
+/* QUIÉNES SOMOS RESPONSIVE */
+
+@media all and (min-width: 768px) {
+  .main {
+    margin: 45px 45px 0px 45px;
+  }
+  .title-about-us {
+    margin: 45px 0px 40px 0px;
+  }
+  .girls {
+    /* background-color:blue; */
+    line-height: 45px;
+    margin: 0px;
+    height: 45px;
+  }
+  .photo {
+    width: 206px;
+    height: 206px;
+  }
+  .girl-article-left {
+    display: flex;
+    /* background-color: red; */
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 60px 0;
+  }
+  .girl-article-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin: 0 0 60px 0;
+  }
+  .div-girl-text-right {
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 0 30px 0 0;
+  }
+
+  .div-girl-text-left {
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 0 0 30px;
+  }
+  .girls-text {
+
+    /* background-color: red; */
+    font-size: 16px;
+    margin: 0px;
+    width: auto;
+    /* max-width: 600px; */
+  }
+  @media all and (min-width: 1200px) {
+    .photo {
+      width: 278px;
+      height: 278px;
+    }
+    .girls-text {
+      width: 440px;
+    }
+    .main {
+      margin: 138px 138px 0px 138px;
+    }
+    .girl-article-left {
+      /* background-color: red; */
+      width: 100%;
+      justify-content: left;
+    }
+    .girl-article-right {
+      /* background-color: blue; */
+      width: 100%;
+      justify-content: right;
+    }
+
+    /* FOOTER RESPONSIVE */
 
 @media all and (min-width: 768px) {
   .footer {
