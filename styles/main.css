@@ -18,18 +18,32 @@
 
 .header {
   width: 100%;
+  margin-bottom: -20px;
+}
+.container-menu {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 990;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .group-name {
+  width: 100%;
   background-color: #099d8d;
   color: #ffffff;
   opacity: 0.95;
   text-align: center;
-  padding: 15px;
+  padding: 18px;
   font-family: "Rubik";
   font-size: 16px;
   font-weight: 500;
   height: 60px;
+}
+.menu-nav {
+  width: 100%;
 }
 
 .list-item {
@@ -38,31 +52,23 @@
   font-size: 15px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   list-style: none;
   opacity: 0.9;
   padding: 16px;
+  height: 45px;
 }
+
 .link {
   color: #ffffff;
   text-decoration: none;
 }
-/* .container-hero {
-  position: relative;
-  top: -110px;
-  z-index: -1;
 
-  position: absolute;
-  top: 0px;
-  z-index: -1;
-} */
-.hero {
-  width: 100%;
+.container-image {
+  height: 421px;
 }
-
-/* MAIN  */
-
-.main {
-  text-align: center;
+.image {
+  width: 100%;
 }
 
 .slogan {
@@ -71,11 +77,19 @@
   font-weight: 600;
   line-height: 25px;
   background-color: white;
+  height: 80px;
+  text-align: center;
   position: relative;
   bottom: 25px;
-  padding: 15px;
+  padding: 20px;
   margin: 0 15px 0 15px;
 }
+/* MAIN  */
+
+.main {
+  text-align: center;
+}
+
 .container-team {
   display: flex;
   flex-direction: column;
@@ -257,13 +271,10 @@
   .girl-article-left {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin: 0 0 60px 0;
   }
   .girl-article-right {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     flex-direction: row-reverse;
     margin: 0 0 60px 0;
   }
@@ -286,8 +297,7 @@
     width: auto;
   }
   .logotipe-list-right {
-    direction: rtl;
-    justify-content: right;
+    justify-content: flex-end;
   }
   .logotipe-list-left {
     justify-content: left;
@@ -372,7 +382,6 @@
 
 @media all and (min-width: 768px) {
   /* HEADER RESPONSIVE TABLET */
-
   .slogan {
     background-color: rgba(255, 255, 255, 0.8);
     position: relative;
@@ -383,7 +392,27 @@
     margin-left: 46px;
   }
 
+  .container-menu {
+    flex-direction: row;
+  }
+
+  .group-name {
+    text-align: left;
+    padding-left: 45px;
+  }
+
+  .list-item {
+    background-color: #099d8d;
+    height: 60px;
+    opacity: 0.95;
+    justify-content: space-between;
+    padding-right: 45px;
+  }
+
   /* TEAM RESPONSIVE TABLET */
+  .container-section {
+    margin-top: -45px;
+  }
   #sec-team {
     color: #099d8d;
   }
