@@ -1,0 +1,91 @@
+/* FOOTER  */
+
+.footer {
+  border-top: 1px solid #b8b8b9;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.copy {
+  color: #b8b8b9;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  margin: 30px 0 0 0px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #54585a;
+  text-transform: uppercase;
+}
+.footer-list {
+  height: 60px;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 20px 0 0 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.div-icon-adalab {
+  width: 115.9px;
+  height: 45px;
+  margin: 30px 0 0 0px;
+}
+.icon-adalab {
+  width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  /* FOOTER RESPONSIVE  */
+
+  .footer {
+    position: relative;
+    display: block;
+    height: 170px;
+  }
+  .copy {
+    position: absolute;
+    left: 45px;
+    bottom: 120px;
+  }
+  .div-icon-adalab {
+    position: absolute;
+    left: 45px;
+    bottom: 60px;
+  }
+  .footer-list {
+    position: absolute;
+    right: 45px;
+    bottom: 56px;
+    text-align: right;
+    height: 90px;
+    line-height: 30px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  /* FOOTER RESPONSIVE */
+
+  .footer {
+    height: 161px;
+  }
+  .copy {
+    /* position: absolute; */
+    left: 138px;
+    bottom: 111px;
+  }
+  .div-icon-adalab {
+    /* position: absolute; */
+    left: 138px;
+    bottom: 51px;
+  }
+  .footer-list {
+    /* position: absolute; */
+    right: 138px;
+    bottom: 47px;
+  }
+}
