@@ -14,12 +14,12 @@
   margin: 30px 0 0 0px;
 }
 
-.footer-link {
+.footer__list__link {
   text-decoration: none;
   color: #54585a;
   text-transform: uppercase;
 }
-.footer-list {
+.footer__list {
   height: 60px;
   list-style: none;
   font-family: "Open Sans", sans-serif;
@@ -30,7 +30,7 @@
   text-align: center;
 }
 
-.div-icon-adalab {
+.div__icon-adalab {
   width: 115.9px;
   height: 45px;
   margin: 30px 0 0 0px;
@@ -52,12 +52,12 @@
     left: 45px;
     bottom: 120px;
   }
-  .div-icon-adalab {
+  .div__icon-adalab {
     position: absolute;
     left: 45px;
     bottom: 60px;
   }
-  .footer-list {
+  .footer__list {
     position: absolute;
     right: 45px;
     bottom: 56px;
@@ -78,12 +78,12 @@
     left: 138px;
     bottom: 111px;
   }
-  .div-icon-adalab {
+  .div__icon-adalab {
     /* position: absolute; */
     left: 138px;
     bottom: 51px;
   }
-  .footer-list {
+  .footer__list {
     /* position: absolute; */
     right: 138px;
     bottom: 47px;
