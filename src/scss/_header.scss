@@ -4,7 +4,7 @@
   width: 100%;
   margin-bottom: -20px;
 }
-.container-menu {
+.menu {
   width: 100%;
   position: fixed;
   top: 0;
@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.group-name {
+.menu__group-name {
   width: 100%;
   background-color: #099d8d;
   color: #ffffff;
@@ -27,11 +27,11 @@
   height: 60px;
   text-transform: uppercase;
 }
-.menu-nav {
+.menu__nav {
   width: 100%;
 }
 
-.list-item {
+.menu__list-item {
   background-color: #14d9c4;
   font-family: "Rubik";
   font-size: 15px;
@@ -44,20 +44,17 @@
   height: 45px;
 }
 
-.link {
+.menu__link {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.container-image {
-  height: 421px;
-}
-.image {
+.hero__image {
   width: 100%;
 }
 
-.slogan {
+.hero__claim {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -74,7 +71,7 @@
 @media all and (min-width: 768px) {
   /* HEADER RESPONSIVE TABLET */
 
-  .slogan {
+  .hero__claim {
     background-color: rgba(255, 255, 255, 0.8);
     position: relative;
     bottom: 82px;
@@ -84,17 +81,17 @@
     margin-left: 46px;
   }
 
-  .container-menu {
+  .menu {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .group-name {
+  .menu__group-name {
     text-align: left;
     padding-left: 45px;
   }
 
-  .list-item {
+  .menu__list-item {
     background-color: #099d8d;
     height: 60px;
     opacity: 0.95;
@@ -105,11 +102,11 @@
 @media all and (min-width: 1200px) {
   /* HEADER RESPONSIVE DESKTOP */
 
-  .menu-nav {
+  .menu__nav {
     width: 50%;
   }
 
-  .slogan {
+  .hero__claim {
     font-size: 24px;
     line-height: 30px;
     position: relative;
