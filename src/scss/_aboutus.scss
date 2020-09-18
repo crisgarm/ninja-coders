@@ -15,21 +15,23 @@
   align-items: center;
   justify-content: center;
 }
-.photo {
+.who-we-are__girl-photo {
   width: 180px;
   height: 180px;
   border-radius: 4px;
   border: solid 5px rgba(0, 0, 0, 0.08);
 }
 
-.girls {
+.girl-left__div--title,
+.girl-right__div--title {
   color: black;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   margin: 15px 0 0 0;
 }
 
-.girls-text {
+.girl-left__div--text,
+.girl-right__div--text {
   color: #54585a;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -38,8 +40,8 @@
   line-height: 1.6;
 }
 
-.logotipe-list-right,
-.logotipe-list-left {
+.girl-left__div--nav,
+.girl-right__div--nav {
   padding: 0px;
   display: flex;
   flex-direction: row;
