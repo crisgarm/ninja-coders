@@ -109,12 +109,12 @@
     margin: 0px;
     width: auto;
   }
-  // .girl-right__div--nav {
-  //   justify-content: flex-end;
-  // }
-  // .girl-left__div--nav {
-  //   justify-content: left;
-  // }
+  .girl-right__div--nav {
+    justify-content: flex-end;
+  }
+  .girl-left__div--nav {
+    justify-content: left;
+  }
 }
 
 @media all and (min-width: 1200px) {
