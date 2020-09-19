@@ -1,54 +1,162 @@
 /* QUIÉNES SOMOS */
 
-.about-us__title {
-  display: inline-block;
-  margin: 30px 0px 30px 0px;
-  color: #099d8d;
-  font-family: "Rubik", sans-serif;
-  font-size: 24px;
-  line-height: 45px;
-  text-transform: uppercase;
-}
-.about-us__who-we-are {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.who-we-are__girl-photo {
-  width: 180px;
-  height: 180px;
-  border-radius: 4px;
-  border: solid 5px rgba(0, 0, 0, 0.08);
+.about-us {
+  @media all and (min-width: 768px) {
+    margin: 0px 45px 0px 45px;
+  }
+  @media all and (min-width: 1200px) {
+    margin: 0px 138px 0px 138px;
+  }
+  &__title {
+    display: inline-block;
+    margin: 30px 0px 30px 0px;
+    color: #099d8d;
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    line-height: 45px;
+    text-transform: uppercase;
+    @media all and (min-width: 768px) {
+      margin: 45px 0px 40px 0px;
+    }
+  }
+  &__who-we-are {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &--girl-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 4px;
+      border: solid 5px rgba(0, 0, 0, 0.08);
+      @media all and (min-width: 768px) {
+        width: 206px;
+        height: 206px;
+      }
+      @media all and (min-width: 1200px) {
+        width: 278px;
+        height: 278px;
+      }
+    }
+    &--girl-left {
+      @media all and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 60px 0;
+      }
+      @media all and (min-width: 1200px) {
+        width: 100%;
+        justify-content: left;
+      }
+    }
+    &--girl-right {
+      @media all and (min-width: 768px) {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 0 60px 0;
+      }
+      @media all and (min-width: 1200px) {
+        width: 100%;
+        justify-content: right;
+      }
+    }
+  }
 }
 
-.girl-left__div--title,
-.girl-right__div--title {
-  color: black;
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  margin: 15px 0 0 0;
+.girl-left__div {
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 0 0 30px;
+  }
+  &--title {
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    margin: 15px 0 0 0;
+    @media all and (min-width: 768px) {
+      line-height: 45px;
+      margin: 0px;
+      height: 45px;
+    }
+  }
+  &--text {
+    color: #54585a;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    margin: 15px 0 0 0;
+    width: 290px;
+    line-height: 1.6;
+    @media all and (min-width: 768px) {
+      font-size: 16px;
+      margin: 0px;
+      width: auto;
+    }
+    @media all and (min-width: 1200px) {
+      width: 440px;
+    }
+  }
+  &--nav {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 30px;
+    margin: 15px 0px 45px 0px;
+    @media all and (min-width: 768px) {
+      justify-content: left;
+    }
+  }
 }
 
-.girl-left__div--text,
-.girl-right__div--text {
-  color: #54585a;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  margin: 15px 0 0 0;
-  width: 290px;
-  line-height: 1.6;
+.girl-right__div {
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 0 30px 0 0;
+  }
+  &--title {
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    margin: 15px 0 0 0;
+    @media all and (min-width: 768px) {
+      line-height: 45px;
+      margin: 0px;
+      height: 45px;
+    }
+  }
+  &--text {
+    color: #54585a;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    margin: 15px 0 0 0;
+    width: 290px;
+    line-height: 1.6;
+    @media all and (min-width: 768px) {
+      font-size: 16px;
+      margin: 0px;
+      width: auto;
+    }
+    @media all and (min-width: 1200px) {
+      width: 440px;
+    }
+  }
+  &--nav {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 30px;
+    margin: 15px 0px 45px 0px;
+    @media all and (min-width: 768px) {
+      justify-content: flex-end;
+    }
+  }
 }
 
-.girl-left__div--nav,
-.girl-right__div--nav {
-  padding: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 30px;
-  margin: 15px 0px 45px 0px;
-}
 .div__nav--logotipe {
   width: 16px;
   height: 16px;
@@ -59,90 +167,4 @@
   content: "·";
   color: #099d8d;
   font-weight: bold;
-}
-
-@media all and (min-width: 768px) {
-  /* QUIÉNES SOMOS RESPONSIVE TABLET */
-
-  .about-us {
-    margin: 0px 45px 0px 45px;
-  }
-  .about-us__title {
-    margin: 45px 0px 40px 0px;
-  }
-  .girl-left__div--title,
-  .girl-right__div--title {
-    line-height: 45px;
-    margin: 0px;
-    height: 45px;
-  }
-  .who-we-are__girl-photo {
-    width: 206px;
-    height: 206px;
-  }
-  .about-us__who-we-are--girl-left {
-    display: flex;
-    flex-direction: row;
-    margin: 0 0 60px 0;
-  }
-  .about-us__who-we-are--girl-right {
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 0 0 60px 0;
-  }
-  .who-we-are__girl-right--div {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    margin: 0 30px 0 0;
-  }
-
-  .who-we-are__girl-left--div {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin: 0 0 0 30px;
-  }
-  .girl-left__div--text,
-  .girl-right__div--text {
-    font-size: 16px;
-    margin: 0px;
-    width: auto;
-  }
-  .girl-right__div--nav {
-    justify-content: flex-end;
-  }
-  .girl-left__div--nav {
-    justify-content: left;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  /* QUIENES SOMOS RESPONSIVE DESKTOP */
-  .who-we-are__girl-photo {
-    width: 278px;
-    height: 278px;
-  }
-  .girl-left__div--text,
-  .girl-right__div--text {
-    width: 440px;
-  }
-  .about-us {
-    margin: 0px 138px 0px 138px;
-  }
-  .about-us__who-we-are--girl-left {
-    /* background-color: red; */
-    width: 100%;
-    justify-content: left;
-  }
-  .about-us__who-we-are--girl-right {
-    /* background-color: blue; */
-    width: 100%;
-    justify-content: right;
-  }
-  // .logotipe-list {
-  //   /* display: inline-block; */
-  //   justify-content: right;
-  //   /* justify-content: left; */
-  // }
 }
