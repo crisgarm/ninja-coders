@@ -12,44 +12,61 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-.menu__group-name {
-  width: 100%;
-  background-color: #099d8d;
-  color: #ffffff;
-  opacity: 0.95;
-  text-align: center;
-  padding: 18px;
-  font-family: "Rubik";
-  font-size: 16px;
-  font-weight: 500;
-  height: 60px;
-  text-transform: uppercase;
-}
-.menu__nav {
-  width: 100%;
-}
+  &__group-name {
+    width: 100%;
+    background-color: #099d8d;
+    color: #ffffff;
+    opacity: 0.95;
+    text-align: center;
+    padding: 18px;
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 500;
+    height: 60px;
+    text-transform: uppercase;
+    @media all and (min-width: 768px) {
+      text-align: left;
+      padding-left: 45px;
+    }
+  }
 
-.menu__list-item {
-  background-color: #14d9c4;
-  font-family: "Rubik";
-  font-size: 15px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  opacity: 0.9;
-  padding: 16px;
-  height: 45px;
-}
+  &__nav {
+    width: 100%;
+    @media all and (min-width: 1200px) {
+      width: 50%;
+    }
+  }
 
-.menu__link {
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
-}
+  &__list-item {
+    background-color: #14d9c4;
+    font-family: "Rubik";
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    opacity: 0.9;
+    padding: 16px;
+    height: 45px;
+    @media all and (min-width: 768px) {
+      background-color: #099d8d;
+      height: 60px;
+      opacity: 0.95;
+      padding-right: 45px;
+    }
+  }
 
+  &__link {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
 .hero__image {
   width: 100%;
 }
@@ -66,12 +83,7 @@
   bottom: 25px;
   padding: 20px;
   margin: 0 15px 0 15px;
-}
-
-@media all and (min-width: 768px) {
-  /* HEADER RESPONSIVE TABLET */
-
-  .hero__claim {
+  @media all and (min-width: 768px) {
     background-color: rgba(255, 255, 255, 0.8);
     position: relative;
     bottom: 82px;
@@ -80,33 +92,7 @@
     padding: 30px 15px;
     margin-left: 46px;
   }
-
-  .menu {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .menu__group-name {
-    text-align: left;
-    padding-left: 45px;
-  }
-
-  .menu__list-item {
-    background-color: #099d8d;
-    height: 60px;
-    opacity: 0.95;
-    padding-right: 45px;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  /* HEADER RESPONSIVE DESKTOP */
-
-  .menu__nav {
-    width: 50%;
-  }
-
-  .hero__claim {
+  @media all and (min-width: 1200px) {
     font-size: 24px;
     line-height: 30px;
     position: relative;
