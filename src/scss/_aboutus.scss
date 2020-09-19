@@ -49,11 +49,11 @@
   height: 30px;
   margin: 15px 0px 45px 0px;
 }
-.logotipe {
+.div__nav--logotipe {
   width: 16px;
   height: 16px;
 }
-.link-point:before {
+.div__nav--li:before {
   border-color: solid;
   padding: 4px;
   content: "·";
@@ -67,79 +67,82 @@
   .about-us {
     margin: 0px 45px 0px 45px;
   }
-  .title-about-us {
+  .about-us__title {
     margin: 45px 0px 40px 0px;
   }
-  .girls {
+  .girl-left__div--title,
+  .girl-right__div--title {
     line-height: 45px;
     margin: 0px;
     height: 45px;
   }
-  .photo {
+  .who-we-are__girl-photo {
     width: 206px;
     height: 206px;
   }
-  .girl-article-left {
+  .about-us__who-we-are--girl-left {
     display: flex;
     flex-direction: row;
     margin: 0 0 60px 0;
   }
-  .girl-article-right {
+  .about-us__who-we-are--girl-right {
     display: flex;
     flex-direction: row-reverse;
     margin: 0 0 60px 0;
   }
-  .div-girl-text-right {
+  .who-we-are__girl-right--div {
     display: flex;
     flex-direction: column;
     text-align: right;
     margin: 0 30px 0 0;
   }
 
-  .div-girl-text-left {
+  .who-we-are__girl-left--div {
     display: flex;
     flex-direction: column;
     text-align: left;
     margin: 0 0 0 30px;
   }
-  .girls-text {
+  .girl-left__div--text,
+  .girl-right__div--text {
     font-size: 16px;
     margin: 0px;
     width: auto;
   }
-  .logotipe-list-right {
-    justify-content: flex-end;
-  }
-  .logotipe-list-left {
-    justify-content: left;
-  }
+  // .girl-right__div--nav {
+  //   justify-content: flex-end;
+  // }
+  // .girl-left__div--nav {
+  //   justify-content: left;
+  // }
 }
 
 @media all and (min-width: 1200px) {
   /* QUIENES SOMOS RESPONSIVE DESKTOP */
-  .photo {
+  .who-we-are__girl-photo {
     width: 278px;
     height: 278px;
   }
-  .girls-text {
+  .girl-left__div--text,
+  .girl-right__div--text {
     width: 440px;
   }
   .about-us {
     margin: 0px 138px 0px 138px;
   }
-  .girl-article-left {
+  .about-us__who-we-are--girl-left {
     /* background-color: red; */
     width: 100%;
     justify-content: left;
   }
-  .girl-article-right {
+  .about-us__who-we-are--girl-right {
     /* background-color: blue; */
     width: 100%;
     justify-content: right;
   }
-  .logotipe-list {
-    /* display: inline-block; */
-    justify-content: right;
-    /* justify-content: left; */
-  }
+  // .logotipe-list {
+  //   /* display: inline-block; */
+  //   justify-content: right;
+  //   /* justify-content: left; */
+  // }
 }
