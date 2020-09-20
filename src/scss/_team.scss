@@ -1,25 +1,42 @@
-.container-team {
+.container-section {
+  @media all and (min-width: 768px) {
+    margin-top: -45px;
+  }
+}
+.team {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.sec-team {
-  font-size: 24px;
-  font-family: "Rubik";
-  font-weight: 500;
-  line-height: 45px;
-  color: #14d9c4;
-  text-transform: uppercase;
+  @media all and (min-width: 768px) {
+    opacity: 0.67;
+    padding: 15px 45px 30px 45px;
+    margin: 0;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 15px 299px 30px 300px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-family: "Rubik";
+    font-weight: 500;
+    line-height: 45px;
+    color: #14d9c4;
+    text-transform: uppercase;
+    @media all and (min-width: 768px) {
+      color: #099d8d;
+    }
+  }
+  &__description {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #54585a;
+    line-height: 1.5;
+    margin: 15px;
+  }
 }
 
-.content-team {
-  font-size: 16px;
-  font-family: "Open Sans";
-  color: #54585a;
-  line-height: 1.5;
-  margin: 15px;
-}
 .square {
   background-color: white;
   width: 30px;
@@ -30,7 +47,8 @@
   top: 14.2px;
   transform: rotate(45deg);
 }
-.strenghts-weakness {
+
+.skills {
   background-color: rgba(184, 184, 185, 0.2);
   padding: 30px 15px 45px 15px;
   display: flex;
@@ -38,13 +56,13 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  &__weakness {
+    padding-top: 30px;
+  }
 }
 
-.weakness {
-  padding-top: 30px;
-}
-
-.title-skills {
+.skills__strenghts-title,
+.skills__weakness-title {
   font-size: 22px;
   font-family: "Rubik";
   font-weight: 500;
@@ -52,7 +70,8 @@
   line-height: 2.05;
 }
 
-.content-skills {
+.skills__strenghts-content,
+.skills__weakness-content {
   font-size: 16px;
   font-family: "Open Sans";
   color: #54585a;
@@ -64,57 +83,42 @@
   .container-section {
     margin-top: -45px;
   }
-  .sec-team {
-    color: #099d8d;
-  }
-
-  .content-team {
-    opacity: 0.67;
-    padding: 15px 45px 30px 45px;
-    margin: 0;
-  }
 
   /* STRENGHTS AND WEAKNESS RESPONSIVE TABLET */
 
-  .strenghts-weakness {
+  .skills {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 333px;
   }
-  .weakness {
+  .skills__weakness {
     padding-top: 0px;
   }
 
-  .title-skills1,
-  .content-skills1 {
+  .skills__strenghts-title,
+  .skills__strenghts-content {
     padding: 0px 15px 0px 45px;
   }
-  .title-skills2,
-  .content-skills2 {
+  .skills__weakness-title,
+  .skills__weakness-content {
     padding: 0px 45px 0px 15px;
   }
 }
 
 @media all and (min-width: 1200px) {
-  /* TEAM RESPONSIVE DESKTOP */
-
-  .content-team {
-    padding: 15px 299px 30px 300px;
-  }
-
   /* STRENGHTS AND WEAKNESS RESPONSIVE DESKTOP */
-  .strenghts-weakness {
+  .skills {
     height: 309px;
   }
 
-  .title-skills1,
-  .content-skills1 {
+  .skills__strenghts-title,
+  .skills__strenghts-content {
     padding: 0px 15px 0px 138px;
   }
-  .title-skills2,
-  .content-skills2 {
+  .skills__weakness-title,
+  .skills__weakness-content {
     padding: 0px 139px 0px 45px;
   }
 }
