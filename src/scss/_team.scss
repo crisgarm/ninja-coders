@@ -1,3 +1,5 @@
+@import "variables";
+
 .container-section {
   @media all and (min-width: 768px) {
     margin-top: -45px;
@@ -19,26 +21,26 @@
 
   &__title {
     font-size: 24px;
-    font-family: "Rubik";
+    font-family: $fontRubik;
     font-weight: 500;
     line-height: 45px;
-    color: #14d9c4;
+    color: $backgroundList;
     text-transform: uppercase;
     @media all and (min-width: 768px) {
-      color: #099d8d;
+      color: $backgroundGroup;
     }
   }
   &__description {
     font-size: 16px;
-    font-family: "Open Sans", sans-serif;
-    color: #54585a;
+    font-family: $fontSans;
+    color: $contentColor;
     line-height: 1.5;
     margin: 15px;
   }
 }
 
 .square {
-  background-color: white;
+  background-color: $colorWhite;
   width: 30px;
   height: 30px;
   display: inline-block;
@@ -49,7 +51,7 @@
 }
 
 .skills {
-  background-color: rgba(184, 184, 185, 0.2);
+  background-color: $backgroundGrey;
   padding: 30px 15px 45px 15px;
   display: flex;
   flex-direction: column;
@@ -77,17 +79,17 @@
   &__strenghts-title,
   &__weakness-title {
     font-size: 22px;
-    font-family: "Rubik";
+    font-family: $fontRubik;
     font-weight: 500;
-    color: #099d8d;
+    color: $backgroundGroup;
     line-height: 2.05;
   }
 
   &__strenghts-content,
   &__weakness-content {
     font-size: 16px;
-    font-family: "Open Sans";
-    color: #54585a;
+    font-family: $fontSans;
+    color: $contentColor;
     line-height: 1.5;
   }
   @media all and (min-width: 768px) {
