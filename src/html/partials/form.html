@@ -1,18 +1,24 @@
 <section class="contact">
-  <div>
-    <h1>Contacto</h1>
-    <p>
+  <div class="contact__container">
+    <h1 class="contact__title">Contacto</h1>
+    <p class="contact__text">
       Lorem ipsum dolor sit amet consectetur adipiscing elit ad placerat per,
       dictumst pharetra rhoncus libero praesent curae consequat cursus.
       Malesuada lacus semper proin accumsan aliquet phasellus aptent
       ullamcorper, ligula himenaeos massa cursus fermentum interdum odio, arcu
       quisque magnis molestie a egestas lacinia.
     </p>
-    <small>Todos los campos marcados con * son obligatorios.</small>
+    <small class="contact__small"
+      >Todos los campos marcados con
+      <span class="contact__small--asterisk">*</span> son obligatorios.</small
+    >
   </div>
-  <form action="" method="post">
-    <label for="firstName">Nombre completo</label>
+  <form action="" method="post" class="form">
+    <label class="form__label" for="firstName"
+      >Nombre completo <span class="form__label--asterisk">*</span></label
+    >
     <input
+      class="form__input-text"
       placeholder="Nombre..."
       id="firstName"
       type="text"
@@ -20,16 +26,11 @@
       required
     />
 
-    <label for="telephone">Teléfono</label>
+    <label class="form__label" for="emailAddress"
+      >Email<span class="form__label--asterisk">*</span></label
+    >
     <input
-      placeholder="Ej: 123456789"
-      type="tel"
-      id="telephone"
-      name="telephone"
-    />
-
-    <label for="emailAddress">Email</label>
-    <input
+      class="form__input-text"
       type="email"
       id="emailAddress"
       name="emailAddress"
@@ -37,8 +38,20 @@
       required
     />
 
-    <label for="comments">Mensaje:</label>
+    <label class="form__label" for="telephone">Teléfono</label>
+    <input
+      class="form__input-text"
+      placeholder="Ej: 123456789"
+      type="tel"
+      id="telephone"
+      name="telephone"
+    />
+
+    <label class="form__label" for="comments"
+      >Mensaje<span class="form__label--asterisk">*</span></label
+    >
     <textarea
+      class="form__text-area"
       placeholder="¿Qué necesitas?"
       id="comments"
       name="comments"
@@ -46,6 +59,7 @@
       cols="30"
       required
     ></textarea>
-    <input type="submit" value="Enviar" />
+
+    <input class="form__button" type="submit" value="Enviar" />
   </form>
 </section>
