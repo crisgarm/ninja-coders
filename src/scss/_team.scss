@@ -1,27 +1,44 @@
-.container-team {
+.container-section {
+  @media all and (min-width: 768px) {
+    margin-top: -45px;
+  }
+}
+.team {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.sec-team {
-  font-size: 24px;
-  font-family: "Rubik";
-  font-weight: 500;
-  line-height: 45px;
-  color: #14d9c4;
-  text-transform: uppercase;
+  @media all and (min-width: 768px) {
+    opacity: 0.67;
+    padding: 15px 45px 30px 45px;
+    margin: 0;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 15px 299px 30px 300px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-family: $fontRubik;
+    font-weight: 500;
+    line-height: 45px;
+    color: $backgroundList;
+    text-transform: uppercase;
+    @media all and (min-width: 768px) {
+      color: $backgroundGroup;
+    }
+  }
+  &__description {
+    font-size: 16px;
+    font-family: $fontSans;
+    color: $contentColor;
+    line-height: 1.5;
+    margin: 15px;
+  }
 }
 
-.content-team {
-  font-size: 16px;
-  font-family: "Open Sans";
-  color: #54585a;
-  line-height: 1.5;
-  margin: 15px;
-}
 .square {
-  background-color: white;
+  background-color: $colorWhite;
   width: 30px;
   height: 30px;
   display: inline-block;
@@ -30,91 +47,67 @@
   top: 14.2px;
   transform: rotate(45deg);
 }
-.strenghts-weakness {
-  background-color: rgba(184, 184, 185, 0.2);
+
+.skills {
+  background-color: $backgroundGrey;
   padding: 30px 15px 45px 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
 
-.weakness {
-  padding-top: 30px;
-}
-
-.title-skills {
-  font-size: 22px;
-  font-family: "Rubik";
-  font-weight: 500;
-  color: #099d8d;
-  line-height: 2.05;
-}
-
-.content-skills {
-  font-size: 16px;
-  font-family: "Open Sans";
-  color: #54585a;
-  line-height: 1.5;
-}
-
-@media all and (min-width: 768px) {
-  /* TEAM RESPONSIVE TABLET */
-  .container-section {
-    margin-top: -45px;
-  }
-  .sec-team {
-    color: #099d8d;
-  }
-
-  .content-team {
-    opacity: 0.67;
-    padding: 15px 45px 30px 45px;
-    margin: 0;
-  }
-
-  /* STRENGHTS AND WEAKNESS RESPONSIVE TABLET */
-
-  .strenghts-weakness {
+  @media all and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 333px;
   }
-  .weakness {
-    padding-top: 0px;
-  }
-
-  .title-skills1,
-  .content-skills1 {
-    padding: 0px 15px 0px 45px;
-  }
-  .title-skills2,
-  .content-skills2 {
-    padding: 0px 45px 0px 15px;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  /* TEAM RESPONSIVE DESKTOP */
-
-  .content-team {
-    padding: 15px 299px 30px 300px;
-  }
-
-  /* STRENGHTS AND WEAKNESS RESPONSIVE DESKTOP */
-  .strenghts-weakness {
+  @media all and (min-width: 1200px) {
     height: 309px;
   }
 
-  .title-skills1,
-  .content-skills1 {
-    padding: 0px 15px 0px 138px;
+  &__weakness {
+    padding-top: 30px;
+    @media all and (min-width: 768px) {
+      padding-top: 0px;
+    }
   }
-  .title-skills2,
-  .content-skills2 {
-    padding: 0px 139px 0px 45px;
+  &__strenghts-title,
+  &__weakness-title {
+    font-size: 22px;
+    font-family: $fontRubik;
+    font-weight: 500;
+    color: $backgroundGroup;
+    line-height: 2.05;
+  }
+
+  &__strenghts-content,
+  &__weakness-content {
+    font-size: 16px;
+    font-family: $fontSans;
+    color: $contentColor;
+    line-height: 1.5;
+  }
+  @media all and (min-width: 768px) {
+    &__strenghts-title,
+    &__strenghts-content {
+      padding: 0px 15px 0px 45px;
+    }
+    &__weakness-title,
+    &__weakness-content {
+      padding: 0px 45px 0px 15px;
+    }
+    @media all and (min-width: 1200px) {
+      &__strenghts-title,
+      &__strenghts-content {
+        padding: 0px 15px 0px 138px;
+      }
+      &__weakness-title,
+      &__weakness-content {
+        padding: 0px 139px 0px 45px;
+      }
+    }
   }
 }

@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+editado desde el ordenador
+=======
+Editando desde GitHub
+>>>>>>> 67c17998572e7fce86066c66e869eba6ee7e2707
