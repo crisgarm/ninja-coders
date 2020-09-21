@@ -46,12 +46,20 @@
     }
   }
   &__input-text {
-    height: 45px;
-    padding-inline-start: 15px;
-    border: solid 1px #b8b8b9;
-    font-family: "Open Sans";
-    font-size: 14px;
-    color: #b8b8b9;
+    &,
+    &--email {
+      height: 45px;
+      padding-inline-start: 15px;
+      border: solid 1px #b8b8b9;
+      font-family: "Open Sans";
+      font-size: 14px;
+    }
+    &::-webkit-input-placeholder {
+      color: #b8b8b9;
+    }
+    &--email {
+      color: #54585a;
+    }
   }
   &__text-area {
     height: 105px;
@@ -59,7 +67,9 @@
     border: solid 1px #b8b8b9;
     font-family: "Open Sans";
     font-size: 14px;
-    color: #b8b8b9;
+    &::-webkit-input-placeholder {
+      color: #b8b8b9;
+    }
   }
 
   &__button {
