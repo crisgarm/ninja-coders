@@ -1,143 +1,168 @@
 /* QUIÉNES SOMOS */
 
-.who-we-are {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.title-about-us {
-  display: inline-block;
-  margin: 30px 0px 30px 0px;
-  color: #099d8d;
-  font-family: "Rubik", sans-serif;
-  font-size: 24px;
-  line-height: 45px;
-  text-transform: uppercase;
-}
-.photo {
-  width: 180px;
-  height: 180px;
-  border-radius: 4px;
-  border: solid 5px rgba(0, 0, 0, 0.08);
+.about-us {
+  @media all and (min-width: 768px) {
+    margin: 0px 45px 0px 45px;
+  }
+  @media all and (min-width: 1200px) {
+    margin: 0px 138px 0px 138px;
+  }
+  &__title {
+    display: inline-block;
+    margin: 30px 0px 30px 0px;
+    color: $backgroundGroup;
+    font-family: $fontSansRubik;
+    font-size: 24px;
+    line-height: 45px;
+    text-transform: uppercase;
+    @media all and (min-width: 768px) {
+      margin: 45px 0px 40px 0px;
+    }
+  }
+  &__who-we-are {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &--girl-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 4px;
+      border: solid 5px rgba(0, 0, 0, 0.08);
+      @media all and (min-width: 768px) {
+        width: 206px;
+        height: 206px;
+      }
+      @media all and (min-width: 1200px) {
+        width: 278px;
+        height: 278px;
+      }
+    }
+    &--girl-left {
+      @media all and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 60px 0;
+      }
+      @media all and (min-width: 1200px) {
+        width: 100%;
+        justify-content: left;
+      }
+      .girl-left__div {
+        @media all and (min-width: 768px) {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+          margin: 0 0 0 30px;
+        }
+        &--title {
+          color: $colorBlack;
+          font-family: $fontSans;
+          font-size: 20px;
+          margin: 15px 0 0 0;
+          @media all and (min-width: 768px) {
+            line-height: 45px;
+            margin: 0px;
+            height: 45px;
+          }
+        }
+        &--text {
+          color: $contentColor;
+          font-family: $fontSans;
+          font-size: 16px;
+          margin: 15px 0 0 0;
+          width: 290px;
+          line-height: 1.6;
+          @media all and (min-width: 768px) {
+            font-size: 16px;
+            margin: 0px;
+            width: auto;
+          }
+          @media all and (min-width: 1200px) {
+            width: 440px;
+          }
+        }
+        &--nav {
+          padding: 0px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          height: 30px;
+          margin: 15px 0px 45px 0px;
+          @media all and (min-width: 768px) {
+            justify-content: left;
+          }
+        }
+      }
+    }
+    &--girl-right {
+      @media all and (min-width: 768px) {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 0 60px 0;
+      }
+      @media all and (min-width: 1200px) {
+        width: 100%;
+        justify-content: right;
+      }
+      .girl-right__div {
+        @media all and (min-width: 768px) {
+          display: flex;
+          flex-direction: column;
+          text-align: right;
+          margin: 0 30px 0 0;
+        }
+        &--title {
+          color: $colorBlack;
+          font-family: $fontSans;
+          font-size: 20px;
+          margin: 15px 0 0 0;
+          @media all and (min-width: 768px) {
+            line-height: 45px;
+            margin: 0px;
+            height: 45px;
+          }
+        }
+        &--text {
+          color: $contentColor;
+          font-family: $fontSans;
+          font-size: 16px;
+          margin: 15px 0 0 0;
+          width: 290px;
+          line-height: 1.6;
+          @media all and (min-width: 768px) {
+            font-size: 16px;
+            margin: 0px;
+            width: auto;
+          }
+          @media all and (min-width: 1200px) {
+            width: 440px;
+          }
+        }
+        &--nav {
+          padding: 0px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          height: 30px;
+          margin: 15px 0px 45px 0px;
+          @media all and (min-width: 768px) {
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+  }
 }
 
-.girls {
-  color: black;
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  margin: 15px 0 0 0;
-}
-
-.girls-text {
-  color: #54585a;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  margin: 15px 0 0 0;
-  width: 290px;
-  line-height: 1.6;
-}
-
-.logotipe-list-right,
-.logotipe-list-left {
-  padding: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 30px;
-  margin: 15px 0px 45px 0px;
-}
-.logotipe {
+.div__nav--logotipe {
   width: 16px;
   height: 16px;
 }
-.link-point:before {
+.div__nav--li:before {
   border-color: solid;
   padding: 4px;
   content: "·";
-  color: #099d8d;
+  color: $backgroundGroup;
   font-weight: bold;
-}
-
-@media all and (min-width: 768px) {
-  /* QUIÉNES SOMOS RESPONSIVE TABLET */
-
-  .about-us {
-    margin: 0px 45px 0px 45px;
-  }
-  .title-about-us {
-    margin: 45px 0px 40px 0px;
-  }
-  .girls {
-    line-height: 45px;
-    margin: 0px;
-    height: 45px;
-  }
-  .photo {
-    width: 206px;
-    height: 206px;
-  }
-  .girl-article-left {
-    display: flex;
-    flex-direction: row;
-    margin: 0 0 60px 0;
-  }
-  .girl-article-right {
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 0 0 60px 0;
-  }
-  .div-girl-text-right {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    margin: 0 30px 0 0;
-  }
-
-  .div-girl-text-left {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin: 0 0 0 30px;
-  }
-  .girls-text {
-    font-size: 16px;
-    margin: 0px;
-    width: auto;
-  }
-  .logotipe-list-right {
-    justify-content: flex-end;
-  }
-  .logotipe-list-left {
-    justify-content: left;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  /* QUIENES SOMOS RESPONSIVE DESKTOP */
-  .photo {
-    width: 278px;
-    height: 278px;
-  }
-  .girls-text {
-    width: 440px;
-  }
-  .about-us {
-    margin: 0px 138px 0px 138px;
-  }
-  .girl-article-left {
-    /* background-color: red; */
-    width: 100%;
-    justify-content: left;
-  }
-  .girl-article-right {
-    /* background-color: blue; */
-    width: 100%;
-    justify-content: right;
-  }
-  .logotipe-list {
-    /* display: inline-block; */
-    justify-content: right;
-    /* justify-content: left; */
-  }
 }
