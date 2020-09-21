@@ -1,42 +1,39 @@
 /* FOOTER  */
-
 .footer {
-  border-top: 1px solid #b8b8b9;
+  border-top: 1px solid $borderGrey;
   height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  .footer__list {
+    height: 60px;
+    list-style: none;
+    font-family: $fontSans;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 20px 0 0 0px;
+    padding: 0px;
+    text-align: center;
+    .footer__list__link {
+      text-decoration: none;
+      color: $contentColor;
+      text-transform: uppercase;
+    }
+  }
 }
 .copy {
-  color: #b8b8b9;
-  font-family: "Open Sans", sans-serif;
+  color: $borderGrey;
+  font-family: $fontSans;
   font-size: 14px;
   margin: 30px 0 0 0px;
 }
-
-.footer__list__link {
-  text-decoration: none;
-  color: #54585a;
-  text-transform: uppercase;
-}
-.footer__list {
-  height: 60px;
-  list-style: none;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  margin: 20px 0 0 0px;
-  padding: 0px;
-  text-align: center;
-}
-
 .div__icon-adalab {
   width: 115.9px;
   height: 45px;
   margin: 30px 0 0 0px;
-}
-.icon-adalab {
-  width: 100%;
+  .icon-adalab {
+    width: 100%;
+  }
 }
 
 @media all and (min-width: 768px) {
@@ -46,6 +43,14 @@
     position: relative;
     display: block;
     height: 170px;
+    .footer__list {
+      position: absolute;
+      right: 45px;
+      bottom: 56px;
+      text-align: right;
+      height: 90px;
+      line-height: 30px;
+    }
   }
   .copy {
     position: absolute;
@@ -57,14 +62,6 @@
     left: 45px;
     bottom: 60px;
   }
-  .footer__list {
-    position: absolute;
-    right: 45px;
-    bottom: 56px;
-    text-align: right;
-    height: 90px;
-    line-height: 30px;
-  }
 }
 
 @media all and (min-width: 1200px) {
@@ -72,6 +69,11 @@
 
   .footer {
     height: 161px;
+    .footer__list {
+      /* position: absolute; */
+      right: 138px;
+      bottom: 47px;
+    }
   }
   .copy {
     /* position: absolute; */
@@ -82,10 +84,5 @@
     /* position: absolute; */
     left: 138px;
     bottom: 51px;
-  }
-  .footer__list {
-    /* position: absolute; */
-    right: 138px;
-    bottom: 47px;
   }
 }
