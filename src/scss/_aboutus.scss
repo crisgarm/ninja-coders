@@ -10,8 +10,8 @@
   &__title {
     display: inline-block;
     margin: 30px 0px 30px 0px;
-    color: #099d8d;
-    font-family: "Rubik", sans-serif;
+    color: $backgroundGroup;
+    font-family: $fontSansRubik;
     font-size: 24px;
     line-height: 45px;
     text-transform: uppercase;
@@ -71,8 +71,8 @@
     margin: 0 0 0 30px;
   }
   &--title {
-    color: black;
-    font-family: "Open Sans", sans-serif;
+    color: $colorBlack;
+    font-family: $fontSans;
     font-size: 20px;
     margin: 15px 0 0 0;
     @media all and (min-width: 768px) {
@@ -82,8 +82,8 @@
     }
   }
   &--text {
-    color: #54585a;
-    font-family: "Open Sans", sans-serif;
+    color: $contentColor;
+    font-family: $fontSans;
     font-size: 16px;
     margin: 15px 0 0 0;
     width: 290px;
@@ -118,8 +118,8 @@
     margin: 0 30px 0 0;
   }
   &--title {
-    color: black;
-    font-family: "Open Sans", sans-serif;
+    color: $colorBlack;
+    font-family: $fontSans;
     font-size: 20px;
     margin: 15px 0 0 0;
     @media all and (min-width: 768px) {
@@ -129,8 +129,8 @@
     }
   }
   &--text {
-    color: #54585a;
-    font-family: "Open Sans", sans-serif;
+    color: $contentColor;
+    font-family: $fontSans;
     font-size: 16px;
     margin: 15px 0 0 0;
     width: 290px;
@@ -165,6 +165,6 @@
   border-color: solid;
   padding: 4px;
   content: "·";
-  color: #099d8d;
+  color: $backgroundGroup;
   font-weight: bold;
 }
