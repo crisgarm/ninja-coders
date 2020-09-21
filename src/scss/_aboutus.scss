@@ -48,6 +48,52 @@
         width: 100%;
         justify-content: left;
       }
+      .girl-left__div {
+        @media all and (min-width: 768px) {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+          margin: 0 0 0 30px;
+        }
+        &--title {
+          color: $colorBlack;
+          font-family: $fontSans;
+          font-size: 20px;
+          margin: 15px 0 0 0;
+          @media all and (min-width: 768px) {
+            line-height: 45px;
+            margin: 0px;
+            height: 45px;
+          }
+        }
+        &--text {
+          color: $contentColor;
+          font-family: $fontSans;
+          font-size: 16px;
+          margin: 15px 0 0 0;
+          width: 290px;
+          line-height: 1.6;
+          @media all and (min-width: 768px) {
+            font-size: 16px;
+            margin: 0px;
+            width: auto;
+          }
+          @media all and (min-width: 1200px) {
+            width: 440px;
+          }
+        }
+        &--nav {
+          padding: 0px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          height: 30px;
+          margin: 15px 0px 45px 0px;
+          @media all and (min-width: 768px) {
+            justify-content: left;
+          }
+        }
+      }
     }
     &--girl-right {
       @media all and (min-width: 768px) {
@@ -59,100 +105,52 @@
         width: 100%;
         justify-content: right;
       }
-    }
-  }
-}
-
-.girl-left__div {
-  @media all and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin: 0 0 0 30px;
-  }
-  &--title {
-    color: $colorBlack;
-    font-family: $fontSans;
-    font-size: 20px;
-    margin: 15px 0 0 0;
-    @media all and (min-width: 768px) {
-      line-height: 45px;
-      margin: 0px;
-      height: 45px;
-    }
-  }
-  &--text {
-    color: $contentColor;
-    font-family: $fontSans;
-    font-size: 16px;
-    margin: 15px 0 0 0;
-    width: 290px;
-    line-height: 1.6;
-    @media all and (min-width: 768px) {
-      font-size: 16px;
-      margin: 0px;
-      width: auto;
-    }
-    @media all and (min-width: 1200px) {
-      width: 440px;
-    }
-  }
-  &--nav {
-    padding: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 30px;
-    margin: 15px 0px 45px 0px;
-    @media all and (min-width: 768px) {
-      justify-content: left;
-    }
-  }
-}
-
-.girl-right__div {
-  @media all and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    margin: 0 30px 0 0;
-  }
-  &--title {
-    color: $colorBlack;
-    font-family: $fontSans;
-    font-size: 20px;
-    margin: 15px 0 0 0;
-    @media all and (min-width: 768px) {
-      line-height: 45px;
-      margin: 0px;
-      height: 45px;
-    }
-  }
-  &--text {
-    color: $contentColor;
-    font-family: $fontSans;
-    font-size: 16px;
-    margin: 15px 0 0 0;
-    width: 290px;
-    line-height: 1.6;
-    @media all and (min-width: 768px) {
-      font-size: 16px;
-      margin: 0px;
-      width: auto;
-    }
-    @media all and (min-width: 1200px) {
-      width: 440px;
-    }
-  }
-  &--nav {
-    padding: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 30px;
-    margin: 15px 0px 45px 0px;
-    @media all and (min-width: 768px) {
-      justify-content: flex-end;
+      .girl-right__div {
+        @media all and (min-width: 768px) {
+          display: flex;
+          flex-direction: column;
+          text-align: right;
+          margin: 0 30px 0 0;
+        }
+        &--title {
+          color: $colorBlack;
+          font-family: $fontSans;
+          font-size: 20px;
+          margin: 15px 0 0 0;
+          @media all and (min-width: 768px) {
+            line-height: 45px;
+            margin: 0px;
+            height: 45px;
+          }
+        }
+        &--text {
+          color: $contentColor;
+          font-family: $fontSans;
+          font-size: 16px;
+          margin: 15px 0 0 0;
+          width: 290px;
+          line-height: 1.6;
+          @media all and (min-width: 768px) {
+            font-size: 16px;
+            margin: 0px;
+            width: auto;
+          }
+          @media all and (min-width: 1200px) {
+            width: 440px;
+          }
+        }
+        &--nav {
+          padding: 0px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          height: 30px;
+          margin: 15px 0px 45px 0px;
+          @media all and (min-width: 768px) {
+            justify-content: flex-end;
+          }
+        }
+      }
     }
   }
 }
