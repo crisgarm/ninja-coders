@@ -2,18 +2,17 @@
   <div class="contact__container">
     <h1 class="contact__title">Contacto</h1>
     <p class="contact__text">
-      Lorem ipsum dolor sit amet consectetur adipiscing elit ad placerat per,
-      dictumst pharetra rhoncus libero praesent curae consequat cursus.
-      Malesuada lacus semper proin accumsan aliquet phasellus aptent
-      ullamcorper, ligula himenaeos massa cursus fermentum interdum odio, arcu
-      quisque magnis molestie a egestas lacinia.
+      Si has llegado hasta aquí es porque te gustaría conseguir una web dinámica
+      y atractiva. En Ninja Coders trabajamos con las últimas tecnologías para
+      desarrollar una web adaptada a tus necesidades.. Consigue todos tus
+      objetivos con nosotras. ¡Contáctanos!
     </p>
     <small class="contact__small"
       >Todos los campos marcados con
       <span class="contact__small--asterisk">*</span> son obligatorios.</small
     >
   </div>
-  <form action="" method="post" class="form">
+  <form action="https://formspree.io/xbjpjyvl" method="post" class="form">
     <label class="form__label" for="firstName"
       >Nombre completo <span class="form__label--asterisk">*</span></label
     >
@@ -25,26 +24,31 @@
       name="firstName"
       required
     />
-    <label class="form__label" for="emailAddress"
-      >Email<span class="form__label--asterisk">*</span></label
-    >
-    <input
-      class="form__input-text--email"
-      type="email"
-      id="emailAddress"
-      name="emailAddress"
-      value="nombre.apellidos@mail.com"
-      required
-    />
-
-    <label class="form__label" for="telephone">Teléfono</label>
-    <input
-      class="form__input-text"
-      placeholder="Ej: 123456789"
-      type="tel"
-      id="telephone"
-      name="telephone"
-    />
+    <div class="form__div-emailtel">
+      <div class="form__div-emailtel--email">
+        <label class="form__label" for="emailAddress"
+          >Email<span class="form__label--asterisk">*</span></label
+        >
+        <input
+          class="form__input-text--email"
+          type="email"
+          id="emailAddress"
+          name="emailAddress"
+          value="nombre.apellidos@mail.com"
+          required
+        />
+      </div>
+      <div class="form__div-emailtel--tel">
+        <label class="form__label" for="telephone">Teléfono</label>
+        <input
+          class="form__input-text"
+          placeholder="Ej: 123456789"
+          type="tel"
+          id="telephone"
+          name="telephone"
+        />
+      </div>
+    </div>
 
     <label class="form__label" for="comments"
       >Mensaje<span class="form__label--asterisk">*</span></label
