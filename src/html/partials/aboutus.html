@@ -1,120 +1,157 @@
 <section class="about-us">
-  <h2 class="title-about-us" id="sec-who-we-are">Quiénes somos</h2>
-  <div class="who-we-are">
-    <article class="girl-article-left">
-      <div class="div-photo-girl-left"><img title="Ninja Coder Yamira Martín" class="photo" src="./assets/images/yamira.jpg" alt="Fotografía Yamira Martín" />
-      </div>
-      <div class="div-girl-text-left">
-        <h3 class="girls">Yamira Martín</h3>
-        <p class="girls-text">
-          Psicóloga de corazón y Adalaber motivada con mucha ilusión por aprender. La organización, comunicación
-          asertiva y alta
-          capacidad en resolución de problemas son algunos de mis fuertes.
-        </p>
-        <ul class="logotipe-list-left">
-          <li>
-            <a title="Ir al Twitter de Yamira" href="https://twitter.com/martin_yamira" target="_blank">
-              <img title="" class="logotipe" src="./assets/images/twitter-logo.png" alt="Logotipo de Twitter." /></a>
-          </li>
-          <li class="link-point">
-            <a title="" href="https://www.linkedin.com/in/yamira-mart%C3%ADn-guzm%C3%A1n-5864828b/" target="_blank">
-              <img title="" class="logotipe" src="./assets/images/linkedin-logo.png" alt=" Logotipo de LinkedIn" /></a>
-          </li>
-          <li class="link-point">
-            <a title="" href="https://github.com/ymartinguzman" target="_blank">
-              <img title="" class="logotipe" src="./assets/images/github-logo.png" alt="Logotipo de github" /></a>
-          </li>
-          <li class="link-point">
-            <a title="" href="mailto:yamiramartinguzman-@gmail.com" target="_blank">
-              <img title="" class="logotipe" src="./assets/images/mail-logo.png" alt="Logotipo de correo" /></a></li>
-        </ul>
-      </div>
+  <h2 class="about-us__title" id="sec-who-we-are">Quiénes somos</h2>
+  <div class="about-us__who-we-are">
+    <!-- YAMIRA -->
+    <article class="about-us__who-we-are--girl-left">
+      <include
+        src="./girl-article.html"
+        titleimg="Ninja Coder Yamira Martín"
+        classimg="about-us__who-we-are--girl-photo"
+        srcimg="./assets/images/yamira.jpg"
+        altimg="Fotografía Yamira Martín"
+        classdiv="girl-left__div"
+        titlediv="girl-left__div--title"
+        titletext="Yamira Martín"
+        textdiv="girl-left__div--text"
+        divtext="Psicóloga de corazón y Adalaber motivada con mucha ilusión por aprender.
+    La organización, comunicación asertiva y alta capacidad en resolución de
+    problemas son algunos de mis fuertes."
+        girldivnav="girl-left__div--nav"
+        titleicontwitter="Ir al Twitter de Yamira"
+        hreficontwitter="https://twitter.com/yamiroynoveo"
+        titlealttwitter="Enlace al
+        twitter de Yamira"
+        logotipeclass="div__nav--logotipe"
+        srcimgicontwitter="./assets/images/twitter-logo.png"
+        classli="div__nav--li"
+        titleiconlin="Ir al Linkedin de Yamira"
+        hreficonlin="https://www.linkedin.com/in/yamira-mart%C3%ADn-guzm%C3%A1n-5864828b/"
+        titlealtlin="Enlace al Linkedin de Yamira"
+        srcimgiconlin="./assets/images/linkedin-logo.png"
+        titleicongit="Ir al Github de Yamira"
+        hreficongit="https://github.com/ymartinguzman"
+        titlealtgit="Enlace al Github
+        de Yamira"
+        srcimgicongit="./assets/images/github-logo.png"
+        titleicongm="Correo electrónico de Yamira"
+        hreficongm="mailto:yamiramartinguzman-@gmail.com"
+        titlealtgm="Enlace al
+        correo electrónico de Yamira"
+        srcimgicongm="./assets/images/mail-logo.png"
+      >
+      </include>
     </article>
-    <article class="girl-article-right">
-      <div class="div-photo-girl-right">
-        <img title="" class="photo" src="./assets/images/cristina.jpg" alt="Fotografía Cristina García" />
-      </div>
-      <div class="div-girl-text-right">
-        <h3 class="girls">Cristina García</h3>
-        <p class="girls-text">
-          Audiovisuales como formación, cultura como afición y programación como pasión. Tras años curioseando sobre
-          páginas web, aterrizo en Adalab para adentrarme en las entrañas de HTML, CSS y JavaScript. Navegando con
-          rumbo fijo hacia convertirme en una Ninja Coder.
-        </p>
-        <ul class="logotipe-list-right">
-          <li>
-            <a title="" href="https://twitter.com/Cris_Gar_Mar" target="_blank">
-              <img title="" class="logotipe" src="./assets/images/twitter-logo.png" alt="Logotipo de Twitter." /></a>
-          </li>
-          <li class="link-point">
-            <a href="https://www.linkedin.com/in/crisgarm" target="_blank">
-              <img title="" class="logotipe" src="./assets/images/linkedin-logo.png" alt=" Logotipo de LinkedIn" /></a>
-          </li>
-          <li class="link-point">
-            <a title="" href="https://github.com/crisgarm" target="_blank">
-              <img title="" class="logotipe" src="./assets/images/github-logo.png" alt="Logotipo de github" /></a></li>
-          </li>
-          <li class="link-point">
-            <a title="" href="mailto:crisgarm9@gmail.com" target="_blank"><img title="" class="logotipe" src="./assets/images/mail-logo.png"
-                alt="Logotipo de correo" /></a></li>
-        </ul>
-      </div>
+
+    <!-- CRISTINA -->
+
+    <article class="about-us__who-we-are--girl-right">
+      <include
+        src="./girl-article.html"
+        titleimg="Ninja Coder Cristina García"
+        classimg="about-us__who-we-are--girl-photo"
+        srcimg="./assets/images/cristina.jpg"
+        altimg="Fotografía Cristina García"
+        classdiv="girl-right__div"
+        titlediv="girl-right__div--title"
+        titletext="Cristina García"
+        textdiv="girl-right__div--text"
+        divtext="Audiovisuales como formación, cultura como afición y programación como pasión. Tras años curioseando sobre
+    páginas web, aterrizo en Adalab para adentrarme en las entrañas de HTML, CSS y JavaScript. Navegando con
+    rumbo fijo hacia convertirme en una Ninja Coder."
+        girldivnav="girl-right__div--nav"
+        titleicontwitter="Ir al Twitter de Cristina"
+        hreficontwitter="https://twitter.com/Cris_Gar_Mar"
+        titlealttwitter="Enlace al twitter
+        de Cristina"
+        logotipeclass="div__nav--logotipe"
+        srcimgicontwitter="./assets/images/twitter-logo.png"
+        classli="div__nav--li"
+        titleiconlin="Ir al Linkedin de Cristina"
+        hreficonlin="https://www.linkedin.com/in/crisgarm"
+        titlealtlin="Enlace al
+        Linkedin de Cristina"
+        srcimgiconlin="./assets/images/linkedin-logo.png"
+        titleicongit="Ir al Github de Cristina"
+        hreficongit="https://github.com/crisgarm"
+        titlealtgit="Enlace al Github de
+        Cristina"
+        srcimgicongit="./assets/images/github-logo.png"
+        titleicongm="Correo electrónico de Cristina"
+        hreficongm="mailto:crisgarm9@gmail.com"
+        titlealtgm="Enlace al correo
+        electrónico de Cristina"
+        srcimgicongm="./assets/images/mail-logo.png"
+      >
+      </include>
     </article>
-    <article class="girl-article-left">
-      <div class="div-photo-girl-left"><img class="photo" src="./assets/images/claudia.jpg"
-          alt="Fotografía Claudia Palazón" /></div>
-      <div class="div-girl-text-left">
-        <h3 class="girls">Claudia Palazón</h3>
-        <p class="girls-text">
-          Diseñadora integral, especializada en diseño de interfaces gráficas. Recién comenzada en la programación
-          front-end, pero con muchas ganas de seguir aprendiendo y dar lo mejor de mí.
-        </p>
-        <ul class="logotipe-list-left">
-          <li>
-            <a title="" href="https://twitter.com/clau_own" target="_blank">
-              <img title="" class="logotipe" src="./assets/images/twitter-logo.png" alt="Logotipo de Twitter." /></a>
-          </li>
-          <li class="link-point">
-            <a title="" href="https://www.linkedin.com/in/claudiapalazon/" target="_blank">
-              <img title="" class="logotipe" src="./assets/images/linkedin-logo.png" alt=" Logotipo de LinkedIn" /></a>
-          </li>
-          <li class="link-point">
-            <a title="" href="https://github.com/claudiapalazon" target="_blank">
-              <img title="" class="logotipe" src="./assets/images/github-logo.png" alt="Logotipo de github" /></a>
-          </li>
-          <li class="link-point">
-            <a title="" href="mailto:claupanon@gmail.com" target="_blank">
-              <img title="" class="logotipe" src="./assets/images/mail-logo.png" alt="Logotipo de correo" /></a></li>
-        </ul>
-      </div>
+
+    <!-- CLAUDIA -->
+    <article class="about-us__who-we-are--girl-left">
+      <include
+        src="./girl-article.html"
+        titleimg="Ninja Coder Claudia Palazón"
+        classimg="about-us__who-we-are--girl-photo"
+        srcimg="./assets/images/claudia.jpg"
+        altimg="Fotografía Claudia Palazón"
+        classdiv="girl-left__div"
+        titlediv="girl-left__div--title"
+        titletext="Claudia Palazón"
+        textdiv="girl-left__div--text"
+        divtext="Diseñadora integral, especializada en diseño de interfaces gráficas. Recién comenzada en la programación front-end, pero con muchas ganas de seguir aprendiendo y dar lo mejor de mí."
+        girldivnav="girl-left__div--nav"
+        titleicontwitter="Ir al Twitter de Claudia"
+        hreficontwitter="https://twitter.com/clau_own"
+        titlealttwitter="Enlace al twitter de Claudia"
+        logotipeclass="div__nav--logotipe"
+        srcimgicontwitter="./assets/images/twitter-logo.png"
+        classli="div__nav--li"
+        titleiconlin="Ir al Linkedin de Claudia"
+        hreficonlin="https://www.linkedin.com/in/claudiapalazon/"
+        titlealtlin="Enlace al Linkedin de Claudia"
+        srcimgiconlin="./assets/images/linkedin-logo.png"
+        titleicongit="Ir al Github de Claudia"
+        hreficongit="https://github.com/claudiapalazon"
+        titlealtgit="Enlace al Github de Claudia"
+        srcimgicongit="./assets/images/github-logo.png"
+        titleicongm="Correo electrónico de Claudia"
+        hreficongm="mailto:claupanon@gmail.com"
+        titlealtgm="Enlace al correo electrónico de Claudia"
+        srcimgicongm="./assets/images/mail-logo.png"
+      >
+      </include>
     </article>
-    <article class="girl-article-right">
-      <div class="div-photo-girl-right"><img title="" class="photo" src="./assets/images/emma.jpg" alt="Fotografía Emma Cebada" />
-      </div>
-      <div class="div-girl-text-right">
-        <h3 class="girls">Emma Cebada</h3>
-        <p class="girls-text">
-          Motivada, entregada y apasionada de la vida. Si buscas a una
-          FrontEnd junior para trabajar en tus proyectos de páginas webs, ¡No
-          dudes en ficharme para tu equipo!
-        </p>
-        <ul class="logotipe-list-right">
-          <li>
-            <img title="" class="logotipe" src="./assets/images/twitter-logo.png" alt="Logotipo de Twitter." />
-          </li>
-          <li class="link-point">
-            <a title="" href="https://www.linkedin.com/in/emma-mar%C3%ADa-cebada-visuara-74639a164/" target="_blank">
-              <img title="" class="logotipe" src="./assets/images/linkedin-logo.png" alt=" Logotipo de LinkedIn" /></a>
-          </li>
-          <li class="link-point">
-            <a title="" href="https://github.com/Emma-cebada" target="_blank">
-              <img title="" class="logotipe" src="./assets/images/github-logo.png" alt="Logotipo de Github" /></a>
-          </li>
-          <li class="link-point">
-            <a title="" href="mailto:emma.cebada@gmail.com" target="_blank">
-              <img title="" class="logotipe" src="./assets/images/mail-logo.png" alt="Logotipo de correo" /></a></li>
-        </ul>
-      </div>
+
+    <!-- EMMA  -->
+    <article class="about-us__who-we-are--girl-right">
+      <include
+        src="./girl-article.html"
+        titleimg="Ninja Coder Emma Cebada"
+        classimg="about-us__who-we-are--girl-photo"
+        srcimg="./assets/images/emma.jpg"
+        altimg="Fotografía Emma Cebada"
+        classdiv="girl-right__div"
+        titlediv="girl-right__div--title"
+        titletext="Emma Cebada"
+        textdiv="girl-right__div--text"
+        divtext="Motivada, entregada y apasionada de la vida. Si buscas a una FrontEnd junior para trabajar en tus proyectos de páginas webs, ¡No dudes en ficharme para tu equipo!"
+        girldivnav="girl-right__div--nav"
+        logotipeclass="div__nav--logotipe"
+        srcimgicontwitter="./assets/images/twitter-logo.png"
+        classli="div__nav--li"
+        titleiconlin="Ir al Linkedin de Emma"
+        hrefticonlin="https://linkedin.com/in/emma-maría-cebada-visuara-74639a164"
+        titlealtlin="Enlace al Linkedin de Emma"
+        srcimgiconlin="./assets/images/linkedin-logo.png"
+        titleicongit="Ir al Github de Emma"
+        hreficongit="https://github.com/Emma-cebada"
+        titlealtgit="Enlace al Github de Emma"
+        srcimgicongit="./assets/images/github-logo.png"
+        titleicongm="Correo electrónico de Emma"
+        hreficongm="mailto:emma.cebada@gmail.com"
+        titlealtgm="Enlace al correo electrónico de Emma"
+        srcimgicongm="./assets/images/mail-logo.png"
+      >
+      </include>
     </article>
   </div>
 </section>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <section class="contact">
   <div class="contact__container">
     <h1 class="contact__title">Contacto</h1>
@@ -63,3 +64,73 @@
     <input class="form__button" type="submit" value="Enviar" />
   </form>
 </section>
+=======
+<section class="contact">
+  <div class="contact__container">
+    <h1 class="contact__title">Contacto</h1>
+    <p class="contact__text">
+      Si has llegado hasta aquí es porque te gustaría conseguir una web dinámica
+      y atractiva. En Ninja Coders trabajamos con las últimas tecnologías para
+      desarrollar una web adaptada a tus necesidades.. Consigue todos tus
+      objetivos con nosotras. ¡Contáctanos!
+    </p>
+    <small class="contact__small"
+      >Todos los campos marcados con
+      <span class="contact__small--asterisk">*</span> son obligatorios.</small
+    >
+  </div>
+  <form action="https://formspree.io/xbjpjyvl" method="post" class="form">
+    <label class="form__label" for="firstName"
+      >Nombre completo <span class="form__label--asterisk">*</span></label
+    >
+    <input
+      class="form__input-text"
+      placeholder="Nombre..."
+      id="firstName"
+      type="text"
+      name="firstName"
+      required
+    />
+    <div class="form__div-emailtel">
+      <div class="form__div-emailtel--email">
+        <label class="form__label" for="emailAddress"
+          >Email<span class="form__label--asterisk">*</span></label
+        >
+        <input
+          class="form__input-text form__input-text--email"
+          type="email"
+          id="emailAddress"
+          name="emailAddress"
+          placeholder="nombre.apellidos@mail.com"
+          required
+        />
+      </div>
+      <div class="form__div-emailtel--tel">
+        <label class="form__label" for="telephone">Teléfono</label>
+        <input
+          class="form__input-text"
+          placeholder="Ej: 123456789"
+          type="tel"
+          id="telephone"
+          name="telephone"
+        />
+      </div>
+    </div>
+
+    <label class="form__label" for="comments"
+      >Mensaje<span class="form__label--asterisk">*</span></label
+    >
+    <textarea
+      class="form__text-area"
+      placeholder="¿Qué necesitas?"
+      id="comments"
+      name="comments"
+      rows="10"
+      cols="30"
+      required
+    ></textarea>
+
+    <input class="form__button" type="submit" value="Enviar" />
+  </form>
+</section>
+>>>>>>> master
