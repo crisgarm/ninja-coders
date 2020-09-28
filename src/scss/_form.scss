@@ -98,19 +98,15 @@
     }
   }
   &__input-text {
-    &,
-    &--email {
-      height: 45px;
-      padding-inline-start: 15px;
-      border: solid 1px $borderGrey;
-      font-family: $fontSans;
-      font-size: 14px;
-    }
+    height: 45px;
+    padding-inline-start: 15px;
+    border: solid 1px $borderGrey;
+    font-family: $fontSans;
+    font-size: 14px;
+    outline-color: $backgroundList;
+
     &::-webkit-input-placeholder {
       color: $borderGrey;
-    }
-    &--email {
-      color: $contentColor;
     }
   }
   &__text-area {
@@ -119,6 +115,7 @@
     border: solid 1px $borderGrey;
     font-family: $fontSans;
     font-size: 14px;
+    outline-color: $backgroundList;
     &::-webkit-input-placeholder {
       color: $borderGrey;
     }
@@ -133,6 +130,7 @@
     padding: 12px 0;
     border-radius: 4px;
     border: solid 1px $borderGrey;
+    outline: none;
     @media all and (min-width: 768px) {
       width: 206px;
       align-self: flex-end;
@@ -140,5 +138,18 @@
     @media all and (min-width: 1200px) {
       width: 278px;
     }
+  }
+}
+
+.hero__container-image {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media all and (min-width: 1200px) {
+    height: 400px;
   }
 }

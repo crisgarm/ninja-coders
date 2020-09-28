@@ -34,7 +34,7 @@
       padding-left: 45px;
     }
     &--link {
-      color: white;
+      // color: white;
       text-decoration: none;
     }
   }
@@ -69,6 +69,18 @@
     }
   }
 }
+.hero__container-image {
+  height: 421px;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media all and (min-width: 1200px) {
+    height: 550px;
+  }
+}
 .hero__image {
   width: 100%;
 }
@@ -87,8 +99,7 @@
   margin: 0 15px 0 15px;
   @media all and (min-width: 768px) {
     background-color: rgba(255, 255, 255, 0.8);
-    position: relative;
-    bottom: 82px;
+    bottom: 78px;
     width: 441px;
     height: 80px;
     padding: 30px 15px;
