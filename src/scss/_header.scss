@@ -70,19 +70,31 @@
   }
 }
 .hero__container-image {
+  background-color: lightblue;
   height: 421px;
   width: 100%;
   overflow: hidden;
-  background-color: black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
   @media all and (min-width: 1200px) {
     height: 550px;
   }
 }
-.hero__image {
+.hero__image--people {
   width: 100%;
+  @media all and (min-width: 768px) {
+    width: 60%;
+  }
+}
+.hero__image {
+  margin-bottom: -20px;
+  width: 100%;
+  @media all and (min-width: 768px) {
+    width: 60%;
+  }
 }
 
 .hero__claim {
