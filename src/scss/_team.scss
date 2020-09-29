@@ -64,30 +64,22 @@
 
 .skills {
   background-color: $backgroundGrey;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+  grid-gap: 30px;
   padding: 30px 15px 45px 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
   @media all and (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 333px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+    padding: 45px 45px 60px 45px;
   }
   @media all and (min-width: 1200px) {
-    height: 309px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+    padding: 45px 138px 60px 138px;
   }
 
-  &__weakness {
-    padding-top: 30px;
-    @media all and (min-width: 768px) {
-      padding-top: 0px;
-    }
-  }
   &__strenghts-title,
   &__weakness-title {
     font-size: 22px;
@@ -95,33 +87,15 @@
     font-weight: 500;
     color: $backgroundGroup;
     line-height: 2.05;
+    @media all and (min-width: 768px) {
+      margin-bottom: 15px;
+    }
   }
-
   &__strenghts-content,
   &__weakness-content {
     font-size: 16px;
     font-family: $fontSans;
     color: $contentColor;
     line-height: 1.5;
-  }
-  @media all and (min-width: 768px) {
-    &__strenghts-title,
-    &__strenghts-content {
-      padding: 0px 15px 0px 45px;
-    }
-    &__weakness-title,
-    &__weakness-content {
-      padding: 0px 45px 0px 15px;
-    }
-    @media all and (min-width: 1200px) {
-      &__strenghts-title,
-      &__strenghts-content {
-        padding: 0px 15px 0px 138px;
-      }
-      &__weakness-title,
-      &__weakness-content {
-        padding: 0px 139px 0px 45px;
-      }
-    }
   }
 }
