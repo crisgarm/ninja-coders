@@ -95,6 +95,20 @@
 }
 .hero__image--people {
   width: 100%;
+  animation-duration: 3s;
+  animation-name: intro;
+  @keyframes intro {
+    0% {
+      opacity: 0;
+    }
+
+    70% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   @media all and (min-width: 768px) {
     width: 60%;
   }
@@ -102,6 +116,18 @@
 .hero__image {
   margin-bottom: -20px;
   width: 100%;
+  animation-duration: 3s;
+  animation-name: ninja;
+  @keyframes ninja {
+    from {
+      transform: translate(0px, -200px);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
   @media all and (min-width: 768px) {
     width: 60%;
   }
