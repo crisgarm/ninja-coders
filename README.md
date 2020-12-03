@@ -8,7 +8,7 @@ Para ver el resultado del desarrollo de la página web puedes visitar el siguien
 
 ## Tecnologías utilizadas
 
-<Imagen de los iconos HTML5, CSS3, SASS, GULP, GIT>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" width=40px/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width=40px/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" width=40px/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg" width=40px/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width=40px/>
 
 Nuestra página está maquetada en HTML5 y CSS3. Además, nos hemos servido del preprocesador SASS y de Gulp. Con la utilización de estas tecnologías hemos conseguido automatizar tareas, trabajar con un código más ordenado y limpio, a la vez que optimizado para que nuestra web cargue rápidamente. Con respecto al control de versiones, hemos creado diferentes ramas según la funcionalidad de cada una, solventando los conflictos con soltura.
 
