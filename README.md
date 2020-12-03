@@ -1,124 +1,47 @@
-![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
+# Ninja Coders
 
-# Adalab web starter kit
+Este es el **proyecto del módulo 01 de Adalab**. El proyecto consiste en el desarrollo de una web colaborativa del equipo **Ninja Coders**. El objetivo principal es mostrar las capacidades y habilidades de las integrantes del equipo, con el fin de que las empresas puedan conocer nuestro trabajo y facilitar el contacto si quisieran contar con nosotras para sus proyectos. Este producto ofrece una forma dinámica e interactiva de conocer nuestras capacidades como programadoras, tanto a nivel equipo como individual, ya que es una forma cómoda y práctica de encontrar programadoras junior con habilidades distinguidas, y por tanto facilita la interacción entre recruiters y candidatas.
 
-Ahoy! Este es nuestro Starter Kit creado en **node y gulp**. ¿Y qué es un Starter kit? Pues es una **plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas**.
+## Demo
 
-Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
+Para ver el resultado del desarrollo de la página web puedes visitar el siguiente enlace: https://beta.adalab.es/project-promo-k-module-1-team-8/.
 
-En el Kit hay 3 tipos de ficheros y carpetas:
+## Tecnologías utilizadas
 
-- Los ficheros que están sueltos en la raíz del repositorio, como gulpfile.js, package.json... Son la configuración del proyecto y no necesitamos modificarlos.
-- La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
-- Las carpetas `public/` y `docs/`, que son generadas automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de `src/`, los procesa y los genera dentro de `public/` y `docs/`.
+<Imagen de los iconos HTML5, CSS3, SASS, GULP, GIT>
 
-## Guía de inicio rápido
+Nuestra página está maquetada en HTML5 y CSS3. Además, nos hemos servido del preprocesador SASS y de Gulp. Con la utilización de estas tecnologías hemos conseguido automatizar tareas, trabajar con un código más ordenado y limpio, a la vez que optimizado para que nuestra web cargue rápidamente. Con respecto al control de versiones, hemos creado diferentes ramas según la funcionalidad de cada una, solventando los conflictos con soltura.
 
-> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) para trabajar con este Starter Kit:
+El desarrollo del ejercicio se ha llevado a cabo utilizando el [Starter Kit de Adalab](https://github.com/Adalab/adalab-web-starter-kit), creado en node y gulp. Se trata de una plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas. Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local, además de otras herramientas como Gulp, que nos ayuda en la automatización de tareas.
 
-### Pasos a seguir cada vez que queremos arrancar un proyecto desde cero:
+## Desarrollo
 
-1. **Crea tu propio repositorio.**
-1. Descarga este **Starter kit desde GitHub**.
-   - No recomendamos que clones este repo ya que no podrás añadir commits.
-1. **Copia todos los ficheros** de este Starter kit en la carpeta raíz de tu repositorio.
-   - Recuerda que debes copiar **también los ficheros ocultos**.
-   - Si has decidido clonar este repo, no debes copiar la carpeta `.git`. Si lo haces estarás machacando tu propio repositorio.
-1. **Abre una terminal** en la carpeta raíz de tu repositorio.
-1. **Instala las dependencias** locales ejecutando en la terminal el comando:
+En primer lugar, nuestra web se ha maquetado en **mobile first**, adaptando el diseño a diferentes tamaños de pantalla. Nuestra página principal `index.html` está dividida en cuatro secciones principales: header, team, who we are y footer.
 
-```bash
-npm install
-```
+- El header está compuesto por un menú de navegación fijo, una imagen animada y un _claim_.
+- En la siguiente sección se muestra una breve descripción del equipo, sus fortalezas y debilidades.
 
-### Pasos para arrancar el proyecto:
+<img alt="Página principal" title="Página principal" src="src/images/ninja-coders-header-team.png"/>
 
-Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. **El proyecto hay que arrancarlo cada vez que te pongas a programar.** Para ello ejecuta el comando:
+- En la sección de _Quiénes Somos_ se presenta brevemente a las integrantes del equipo, su habilidad ninja y los métodos de contacto con cada una: twitter, linkedin, github y email.
+- El footer consta del mismo menú de navegación que el header aunque con diferente estructura.
 
-```bash
-npm start
-```
+<img alt="Página principal" title="Página principal" src="src/images/ninja-coders-whoweare-footer.png"/>
 
-Este comando:
+La página de `contact.html` mantiene el header y el footer e implementa un formulario que recoge información de contacto como nombre completo, email, teléfono y mensaje y un botón para poder enviarlo. Así, cualquier persona interesada en nuestros servicios puede ponerse en contacto con nosotras.
 
-- **Abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
-- También **observa** todos los ficheros que hay dentro de la carpeta `src/`, para que cada vez que modifiques un fichero **refresca tu página en Chrome**.
-- También **procesa los ficheros** HTML, SASS / CSS y JS y los **genera y guarda en la carpeta `public/`**. Por ejemplo:
-   - Convierte los ficheros SASS en CSS.
-   - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
+<img alt="Página de contacto" title="Página de contacto" src="src/images/ninja-coders-contact.png"/>
 
-Después de ejecutar `npm start` ya puedes empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
+## Instalación
 
-### Pasos para publicar el proyecto en GitHub Pages:
+Para poder usar este proyecto tienes que seguir estos pasos:
 
-Para generar tu página para producción ejecuta el comando:
+- Clonar el repositorio
+- Instalar las dependencias con `npm install`
+- Arrancar el proyecto con `npm start`
 
-```bash
-npm run docs
-```
+---
 
-Y a continuación:
+Este proyecto ha sido desarrollado por **[Claudia Palazón](https://github.com/claudiapalazon), [Cristina García](https://github.com/crisgarm), [Emma Cebada](https://github.com/Emma-cebada) y [Yamira Martín](https://github.com/ymartinguzman)**.
 
-1. Sube a tu repo la carpeta `docs/` que se te acaba de generar.
-1. Entra en la pestaña `settings` de tu repo.
-1. Y en el apartado de GitHub Pages activa la opción **master branch /docs folder**.
-1. Y ya estaría!!!
-
-Además, los comandos:
-
-```bash
-npm run push-docs
-```
-o
-
-```bash
-npm run deploy
-```
-
-son un atajo que nos genera la versión de producción y hace push de la carpeta `docs/` del tirón. Te recomendamos ver el fichero `package.json` para aprender cómo funciona.
-
-## Flujo de archivos con Gulp
-
-Estas tareas de Gulp producen el siguiente flujo de archivos:
-
-![Gulp flow](./gulp-flow.png)
-
-## `gulpfile.js` y `config.json`
-
-Nuestro **gulpfile.js** usa el fichero `config.json` de configuración con las rutas de los archivos a generar / observar.
-
-De esta manera separarmos las acciones que están en `gulpfile.js` de la configuración de las acciones que están en `config.json`.
-
-## Estructura de carpetas
-
-La estructura de carpetas tiene esta pinta:
-
-```
-src
- ├─ api // los ficheros de esta carpeta se copian en public/api/
- |  └─ data.json
- ├─ images
- |  └─ logo.jpg
- ├─ js // los ficheros de esta carpeta se concatenan en el fichero main.js y este se guarda en public/main.js
- |  ├─ main.js
- |  └─ events.js
- ├─ scss
- |  ├─ components
- |  ├─ core
- |  ├─ layout
- |  └─ pages
- └─ html
-    └─ partials
-```
-
-> **NOTA:** Los partials de HTML y SASS del proyecto son orientativos. Te recomendamos usar los que quieras, y borrar los que no uses.
-
-## Vídeotutoriales del Starter kit
-
-- [Qué es, trabajar con la versión de desarrollo y rutas relativas](https://www.youtube.com/watch?v=XwvhXvBijos)
-- [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
-- [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
-
-## Falta algo?
-
-Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de las issues o si te animas a mejorarlo mándanos un PR :)
+_Ninja Coders © 2020_
